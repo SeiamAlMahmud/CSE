@@ -1,7 +1,3 @@
-Below is a deeper dive into the key concepts from the Set Notation lecture, followed by 50 practice questions with detailed answers.
-
----
-
 ## Deepened Explanation of Key Concepts
 
 ### 1. What Is a Set?
@@ -305,7 +301,7 @@ By combining these conventions and tips, Venn diagrams become a powerful way to 
 
     **Answer:** $\mathbb{N} = \{1,2,3,\dots\}$.
 
-35. **What is $\{x: x^2=2\}$?**
+35. **What is $\{x: x^2=2\}$?** 😐😐
 
     **Answer:** Empty set in $\mathbb{Z}$, $\{\sqrt2,-\sqrt2\}$ in $\mathbb{R}$.
 
@@ -372,5 +368,3 @@ By combining these conventions and tips, Venn diagrams become a powerful way to 
 
 
 ---
-
-Feel free to work through these questions, and let me know if you’d like hints or further clarification on any topic!
