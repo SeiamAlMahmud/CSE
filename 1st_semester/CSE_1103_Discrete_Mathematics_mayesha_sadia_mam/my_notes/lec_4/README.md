@@ -265,163 +265,212 @@ The complement of the union is the part of $U$ outside both circles (intersectio
 ### A. Commutative & Associative (Q1–10)
 
 1. State the union-commutative law.
+
    **A:** $A\cup B=B\cup A$.
 
 2. State the intersection-commutative law.
+
    **A:** $A\cap B=B\cap A$.
 
 3. Explain why union is commutative using a Venn diagram.
+
    **A:** Swapping circle labels leaves combined area unchanged.
 
 4. State the union-associative law.
+
    **A:** $A\cup(B\cup C)=(A\cup B)\cup C$.
 
 5. State the intersection-associative law.
+
    **A:** $A\cap(B\cap C)=(A\cap B)\cap C$.
 
 6. Why does grouping not matter for intersections of three sets?
+
    **A:** The common region among all three circles is the same regardless of pairing.
 
 7. Give a roster-notation example verifying $A\cup(B\cup C)=(A\cup B)\cup C$.
+
    **A:** Let $A=\{1\},B=\{2\},C=\{3\}$, both sides = $\{1,2,3\}$.
 
 8. Is $(A\cup B)\cup C=\;A\cup(B\cup C)$ always true if sets are infinite?
+
    **A:** Yes—associativity holds for all sets.
 
 9. Provide a counterexample if someone claimed $A\cup B\neq B\cup A$.
+
    **A:** No counterexample exists; it's always true.
 
 10. In context of functions, why is associativity of union important?
+
     **A:** We can group domains arbitrarily when combining relations.
 
 ### B. Distributive Laws (Q11–20)
 
 11. State $A\cap(B\cup C)$ distributive law.
+
     **A:** $= (A\cap B)\cup(A\cap C)$.
 
 12. State $A\cup(B\cap C)$ distributive law.
+
     **A:** $= (A\cup B)\cap(A\cup C)$.
 
 13. Verify $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$ for $A=\{1,2\},B=\{2\},C=\{3\}$.
+
     **A:** LHS={2}, RHS={2}.
 
 14. Does distributivity hold when one of the sets is empty?
+
     **A:** Yes: e.g. $A\cap(\varnothing\cup C)=A\cap C$.
 
 15. Show via Venn that $A\cup(B\cap C)$ shading = $(A\cup B)\cap(A\cup C)$.
+
     **A:** Shade regions in either A or the overlap of B and C.
 
 16. Give an example where $B\cap(C\cup D)\neq(B\cap C)\cup D$.
+
     **A:** Invalid: by law, these are equal only if parentheses change membership.
 
 17. Is $(A\cap B)\cup C = A\cap(B\cup C)$? True or false?
+
     **A:** False in general.
 
 18. Prove $(A\cup B)\cap C = (A\cap C)\cup(B\cap C)$.
+
     **A:** Distribute $\cap$ over $\cup$; symmetric to Q11.
 
 19. In logic terms, what does distributivity correspond to?
+
     **A:** $P\land(Q\lor R)\equiv(P\land Q)\lor(P\land R)$.
 
 20. Why is distributivity crucial for simplifying complex set expressions?
+
     **A:** Allows factoring or expanding parts to simpler unions/intersections.
 
 ### C. De Morgan’s Laws for Difference (Q21–30)
 
 21. State $A\setminus(B\cup C)$.
+
     **A:** $(A\setminus B)\cap(A\setminus C)$.
 
 22. State $A\setminus(B\cap C)$.
+
     **A:** $(A\setminus B)\cup(A\setminus C)$.
 
 23. For $A=\{1,2,3\},B=\{2\},C=\{3\}$, compute $A\setminus(B\cup C)$.
+
     **A:** $\{1\}$.
 
 24. Compute $(A\setminus B)\cap(A\setminus C)$ with same sets.
+
     **A:** $\{1\}$.
 
 25. Compute $A\setminus(B\cap C)$ with $B,C$ disjoint.
+
     **A:** $A\setminus\varnothing = A.$
 
 26. Show via Venn that difference-De Morgan holds graphically.
+
     **A:** Shade only parts of A outside any overlap with B or C.
 
 27. If $B\subseteq C$, simplify $A\setminus(B\cup C)$.
+
     **A:** $A\setminus C.$
 
 28. If $C\subseteq B$, what is $A\setminus(B\cap C)$?
+
     **A:** $A\setminus B.$
 
 29. Provide a real-world analogy for $A\setminus(B\cup C)$.
+
     **A:** “Students who passed Math **but neither** Physics nor Chemistry.”
 
 30. How does difference interact with infinite sets?
+
     **A:** Same laws hold; remove all elements in union/intersection.
 
 ### D. De Morgan’s Laws for Complement (Q31–40)
 
 31. State $(A\cup B)' = A'\cap B'$.
+
     **A:** Everything outside both A and B.
 
 32. State $(A\cap B)' = A'\cup B'$.
+
     **A:** Everything outside at least one of A or B.
 
 33. In a universe of people, let $A=$ “likes tea”, $B=$ “likes coffee.”  Interpret $(A\cup B)'$.
+
     **A:** People who like neither tea nor coffee.
 
 34. Interpret $(A\cap B)'$ in same context.
+ 
     **A:** People who dislike either tea or coffee (or both).
 
 35. Verify $(A\cup B)' = A'\cap B'$ roster-wise for $U=\{1,2,3\},A=\{1\},B=\{2\}$.
+
     **A:** LHS $=\{3\}$, RHS $=\{3\}$.
 
 36. Why is complement-De Morgan essential in logical circuit design?
+
     **A:** For implementing NOT(OR) as AND of NOTs, etc.
 
 37. Show using Venn that complement-De Morgan flips shading inside→outside.
+
     **A:** Shade outside each circle and take intersection/union accordingly.
 
 38. If $U=\{1,2,3,4\},A=\{1,2\},B=\{2,3\}$, list $(A\cap B)'$.
+
     **A:** $\{1,4\}\cup\{? \}$ actually $\{1,4\}\cup\{3,4\}=\{1,3,4\}$.
 
 39. Compute $(A\cup B)'$ for same $U,A,B$.
+
     **A:** $\{4\}$.
 
 40. Does complement-De Morgan require finiteness?
+
     **A:** No—holds in all Boolean algebras.
 
 ### E. Mixed & Proof-by-Venn (Q41–50)
 
 41. Prove commutativity of union by listing elements in roster form.
+
     **A:** Show both lists sorted match.
 
 42. Prove associativity of intersection by double application of commutativity.
+
     **A:** Rearrange groupings stepwise.
 
 43. Use a Venn diagram to prove distributivity of $\cap$ over $\cup$.
+
     **A:** Shade A inside B∪C equals union of A∩B and A∩C.
 
 44. Show that $(A\setminus B)\cup(B\setminus A)=A\triangle B$.
+
     **A:** Definition of symmetric difference.
 
 45. How many distinct regions are there in a 3-set Venn?
+
     **A:** $2^3=8.$
 
 46. Label all 8 regions in terms of set operations (e.g. only-A, A∩B∩C, etc.).
+
     **A:** $\varnothing;\,A\setminus(B\cup C);\dots;A\cap B\cap C.$
 
 47. For four sets, how many regions?
+
     **A:** $2^4=16.$
 
 48. Use Venn to derive the two-set inclusion–exclusion formula.
+
     **A:** Count A+B minus overlap.
 
 49. Use Venn to derive the three-set inclusion–exclusion formula.
+
     **A:** Sum singles, subtract pairs, add triple.
 
 50. Summarize in one sentence why Venn diagrams are powerful for set laws.
+
     **A:** They translate algebraic identities into visual region-counting, making proofs intuitive.
 
 ---
 
-Feel free to request worked-out diagrams or deeper walkthroughs for any specific question!
